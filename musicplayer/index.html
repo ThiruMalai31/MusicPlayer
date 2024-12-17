@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-player">
+    <h1>Music Player</h1>
+
+    <div class="file-upload">
+      <label for="song-upload" class="upload-btn">Upload Songs</label>
+      <input type="file" id="song-upload" multiple accept="audio/*" hidden />
+    </div>
+
+    <div class="main-controls">
+      <button id="prev">⏮️</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <div class="track-info">
+      <p id="current-track">No song playing</p>
+    </div>
+
+    <div class="actions">
+      <button id="favorites-btn">Show Favorites</button>
+      <button id="playlists-btn">Show Playlists</button>
+    </div>
+
+    <div id="song-list" class="song-list"></div>
+
+    <div id="favorites-list" class="song-list hidden"></div>
+
+    <div id="playlists" class="hidden">
+      <h3>Create Playlist</h3>
+      <input type="text" id="playlist-name" placeholder="Playlist Name" />
+      <button id="create-playlist">Create</button>
+      <div id="playlist-list"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

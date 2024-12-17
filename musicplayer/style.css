@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .music-player {
+    width: 90%;
+    max-width: 600px;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .file-upload {
+    margin-bottom: 20px;
+  }
+  
+  .upload-btn {
+    display: inline-block;
+    background: #61dafb;
+    color: #282c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-controls button {
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actions button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #21a1f1;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .song-list {
+    margin-top: 20px;
+  }
+  
+  .song-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .song-card button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
